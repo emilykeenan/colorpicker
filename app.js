@@ -25,9 +25,6 @@ $(document).ready(function() {
     });
     $('#' + colorsArray[i]).hover(function() {
       $(this).css('cursor','pointer');
-    },
-    function() {
-      $(this).css('cursor','auto');
     });
   })
 
