@@ -24,7 +24,9 @@ $(document).ready(function() {
       'border': '1px solid black'
     });
     $('#' + colorsArray[i]).hover(function() {
-      $(this).css('cursor','pointer');
+      $(this).css({
+        'cursor':'pointer',
+      });
     });
   })
 
@@ -58,7 +60,7 @@ $(document).ready(function() {
     var id = this.id;
     if(id === colorToClick) {
       $(this).css('background-color', 'black').animate({
-        opacity: '0.0'
+        opacity: '0'
       });
       $('#clickCorrect').html('Great work!');
       setTimeout(function(){
