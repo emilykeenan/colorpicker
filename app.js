@@ -51,7 +51,7 @@ $(document).ready(function() {
   //first, the variable id is created to relate to the id of the div clicked
   //then, the if statement checks to see if the id matches the value of the
   //color in the color array that was chosen by getColor
-  //if it is, the item animates, clears all errors, logs a great job message, then
+  //if it is, the item animates, container animates, clears all errors, logs a great job message, then
   //the page reloads. If it isn't true, the function logs a message on the
   //DOM to try again and changes the opacity of the incorrect div.
   function checkColor() {
