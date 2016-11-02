@@ -1,34 +1,31 @@
 $(document).ready(function() {
   //declares an array with all of our colors
-  var colorsArray = ['pink', 'blue', 'turquoise', 'orange'];
+  var colorsArray = ['pink', 'blue', 'turquoise', 'orange', 'red', 'lilac'];
 
   //declares a variable that relates to the random color chosen by the getColor function
   var colorToClick = getColor(colorsArray)
 
   //appending colored divs to the DOM
-  $('#container').append(
-    '<div id="pink"></div>' +
-    '<div id="blue"></div>' +
-    '<div id="turquoise"></div>' +
-    '<div id="orange"></div>'
-  );
+  // $('#container').append(
+  //   '<div id="pink"></div>' +
+  //   '<div id="blue"></div>' +
+  //   '<div id="turquoise"></div>' +
+  //   '<div id="orange"></div>'
+  // );
 
-  // $.each(colorsArray , function(i, val) {
-  //   $('#container').append('<div id="' + colorsArray[i] +
-  //    '" style="background-color:' + colorsArray[i] +
-  //    ';width:100px;'+
-  //    'height:100px;' +
-  //    'border-radius:50%' +
-  //    '></div>');
-  //   // $('div').css(
-  //   //   'background':colorsArray[i],
-  //   //   'width;':'100px',
-  //   //   'height':'100px',
-  //   //   'border-radius':'50%'
-  //   // );
-  // })
+  $.each(colorsArray , function(i, val) {
+    $('#container').append('<div id="' + colorsArray[i] +'"></div>');
+    $('#' + colorsArray[i]).css({
+      'background-color':colorsArray[i],
+      'width':'100px',
+      'height':'100px',
+      'border-radius':'50%',
+      'float':'left',
+      'margin': '0 10px 10px 0'
+    });
+  })
 
-  //tells user what color to click on
+  //sets message that tells user what color to click on
   $('#clickMsg').text('Click on ' + colorToClick + '!');
 
 
@@ -42,12 +39,12 @@ $(document).ready(function() {
   $el.on('click', '#clickError',  clearOut);
 
 
-  //declarin a function to go through colors array and choose a random color
+  //declaring a function to go through colorsArray and choose a random color
   function getColor(colorsArray) {
     return colorsArray[Math.floor(Math.random() * colorsArray.length)];
   }
 
-  //declaring function to check if color clicked is correct
+  //declaring function to check if the color clicked is correct
   //first, the variable id is created to relate to the id of the div clicked
   //then, the if statement checks to see if the id matches the value of the
   //color in the color array that was chosen by getColor
