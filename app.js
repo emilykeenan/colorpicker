@@ -49,7 +49,6 @@ $(document).ready(function() {
     console.log(id);
     if(id === colorToClick) {
       $(this).css('background-color', 'black').animate({
-        height: '-=25px',
         opacity: '0.0'
       });
       $('#clickCorrect').html('Great work!');
