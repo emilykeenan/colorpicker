@@ -50,7 +50,6 @@ $(document).ready(function() {
   //DOM to try again.
   function checkColor() {
     var id = this.id;
-    console.log(id);
     if(id === colorToClick) {
       $(this).css('background-color', 'black').animate({
         opacity: '0.0'
