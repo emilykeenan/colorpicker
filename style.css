@@ -4,8 +4,9 @@ body {
 }
 
 #container, #messages {
-  margin: 0 auto;
+  margin: 0px auto;
   background: white;
+  padding-left: 20px;
 }
 
 #clickMsg {
@@ -26,8 +27,8 @@ body {
 }
 
 #container {
-  width: 490px;
+  width: 660px;
   height: 100%;
   align-items: center;
-  padding: 60px 0 0 0;
+  padding: 60px 0 0 50px;
 }
