@@ -41,7 +41,6 @@ $(document).ready(function() {
   //tells DOM that when a colored div is clicked, run checkColor
   //and clear out #clickError
   $el.on('click', checkColor);
-  $el.on('click', '#clickError',  clearOut);
 
 
   //declaring a function to go through colorsArray and choose a random color
@@ -68,13 +67,8 @@ $(document).ready(function() {
       $(this).css({
         'opacity':'0.1',
       });
-      $('#clickError').html('You clicked ' + id + '. Try again!');
+      $('#clickError').empty().html('You clicked ' + id + '. Try again!');
     }
-  }
-
-  //declares a function used to clear out past incorrect answer
-  function clearOut() {
-    $(this).empty();
   }
 
 })
