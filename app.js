@@ -5,14 +5,6 @@ $(document).ready(function() {
   //declares a variable that relates to the random color chosen by the getColor function
   var colorToClick = getColor(colorsArray)
 
-  //appending colored divs to the DOM
-  // $('#container').append(
-  //   '<div id="pink"></div>' +
-  //   '<div id="blue"></div>' +
-  //   '<div id="turquoise"></div>' +
-  //   '<div id="orange"></div>'
-  // );
-
   $.each(colorsArray , function(i, val) {
     $('#container').append('<div id="' + colorsArray[i] +'"></div>');
     $('#' + colorsArray[i]).css({
@@ -58,7 +50,7 @@ $(document).ready(function() {
     if(id === colorToClick) {
       $(this).css('background-color', 'black').animate({
         height: '-=25px',
-        width: '-=25px'
+        opacity: '0.0'
       });
       $('#clickCorrect').html('Great work!');
       setTimeout(function(){
