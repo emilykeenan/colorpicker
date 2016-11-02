@@ -10,8 +10,7 @@ $(document).ready(function() {
   var colorToClick = getColor(colorsArray)
 
   //goes through each index in colorsArray, generates a div with the id set
-  //to that named color, then sets the CSS for that div as well as the
-  //cursor for the hover state
+  //to that named color, then sets the CSS for that div
   $.each(colorsArray , function(i, val) {
     $('#container').append('<div id="' + colorsArray[i] +'"></div>');
     $('#' + colorsArray[i]).css({
@@ -23,6 +22,8 @@ $(document).ready(function() {
       'margin': '0 10px 20px 10px',
       'border': '1px solid black'
     });
+    
+    //sets the cursor for hover state
     $('#' + colorsArray[i]).hover(function() {
       $(this).css({
         'cursor':'pointer',
