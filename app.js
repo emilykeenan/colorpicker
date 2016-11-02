@@ -55,13 +55,11 @@ $(document).ready(function() {
   //color in the color array that was chosen by getColor
   //if it is, the item animates, logs a great job message, then
   //the page reloads. If it isn't true, the function logs a message on the
-  //DOM to try again and takes away the dot of your wrong answer.
+  //DOM to try again and changes the opacity of the incorrect div.
   function checkColor() {
     var id = this.id;
     if(id === colorToClick) {
-      $(this).css('background-color', 'black').animate({
-        opacity: '0'
-      });
+      $(this).css('background-color', 'black').animate({opacity: '0'});
       $('#clickError').empty().html('Great work!');
       setTimeout(function(){
         location.reload();
