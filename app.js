@@ -62,7 +62,7 @@ $(document).ready(function() {
       $(this).css('background-color', 'black').animate({
         opacity: '0'
       });
-      $('#clickCorrect').html('Great work!');
+      $('#clickError').empty().html('Great work!');
       setTimeout(function(){
         location.reload();
       }, 2000);

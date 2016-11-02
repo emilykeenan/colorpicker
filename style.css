@@ -14,10 +14,6 @@ body {
   padding-bottom: 15px;
 }
 
-#clickError {
-  margin-bottom: 10px;
-}
-
 #messages {
   background: #ececec;
   width: 100%;
