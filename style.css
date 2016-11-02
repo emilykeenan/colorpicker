@@ -24,6 +24,7 @@ body {
   height: 80px;
   text-align: center;
   padding: 60px 0 60px 0;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 #container {
