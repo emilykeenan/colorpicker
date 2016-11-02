@@ -1,6 +1,6 @@
 $(document).ready(function() {
   //declares an array with all of our colors
-  var colorsArray = ['pink', 'blue', 'turquoise', 'orange', 'red', 'lilac'];
+  var colorsArray = ['pink', 'blue', 'turquoise', 'orange', 'red', 'LemonChiffon', 'DarkSlateGray', 'RosyBrown'];
 
   //declares a variable that relates to the random color chosen by the getColor function
   var colorToClick = getColor(colorsArray)
@@ -21,7 +21,8 @@ $(document).ready(function() {
       'height':'100px',
       'border-radius':'50%',
       'float':'left',
-      'margin': '0 10px 10px 0'
+      'margin': '0 10px 20px 10px',
+      'border': '1px solid black'
     });
   })
 
