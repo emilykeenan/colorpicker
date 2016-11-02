@@ -25,7 +25,10 @@ $(document).ready(function() {
     });
     $('#' + colorsArray[i]).hover(function() {
       $(this).css('cursor','pointer');
-    }, 
+    },
+    function() {
+      $(this).css('cursor','auto');
+    });
   })
 
   //sets message that tells user what color to click on
