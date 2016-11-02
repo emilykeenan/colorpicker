@@ -42,11 +42,11 @@ $(document).ready(function() {
     var id = this.id;
     console.log(id);
     if(id === colorToClick) {
-      location.reload();
+      $(this).css('background-color', 'black');
+      $('#clickCorrect').html('Great work!');
+      setTimeout(function(){location.reload(); }, 2000);
     } else {
-      $('#clickError').html(
-        'You clicked ' + id + '. Try again!'
-      );
+      $('#clickError').html('You clicked ' + id + '. Try again!');
     }
   }
 
