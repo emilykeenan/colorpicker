@@ -1,7 +1,7 @@
 $(document).ready(function() {
   //declares an array with all of our colors
-  var colorsArray = ['red', 'blue', 'turquoise', 'orange', 'PapayaWhip', 'LemonChiffon',
-                    'DarkSlateGray', 'RosyBrown', 'orchid', 'coral', 'maroon',
+  var colorsArray = ['red', 'RosyBrown', 'turquoise', 'orange', 'PapayaWhip', 'LemonChiffon',
+                    'DarkSlateGray', 'blue', 'orchid', 'coral', 'maroon',
                     'SkyBlue', 'linen', 'OliveDrab', 'MediumVioletRed', 'silver',
                     'teal', 'crimson', 'pink', 'sienna'];
 
