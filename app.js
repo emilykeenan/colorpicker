@@ -13,15 +13,20 @@ $(document).ready(function() {
     '<div id="orange"></div>'
   );
 
-//   $.each(colorsArray , function(i, val) {
-//     $('#container').append('<div id="' + colorsArray[i] + '"></div>');
-//     $('#' + colorsArray[i]).css(
-//     'background':colorsArray[i],
-//     'width;':'100px',
-//     'height':'100px',
-//     'border-radius':'50%'
-//   );
-// })
+  // $.each(colorsArray , function(i, val) {
+  //   $('#container').append('<div id="' + colorsArray[i] +
+  //    '" style="background-color:' + colorsArray[i] +
+  //    ';width:100px;'+
+  //    'height:100px;' +
+  //    'border-radius:50%' +
+  //    '></div>');
+  //   // $('div').css(
+  //   //   'background':colorsArray[i],
+  //   //   'width;':'100px',
+  //   //   'height':'100px',
+  //   //   'border-radius':'50%'
+  //   // );
+  // })
 
   //tells user what color to click on
   $('#clickMsg').text('Click on ' + colorToClick + '!');
@@ -46,7 +51,8 @@ $(document).ready(function() {
   //first, the variable id is created to relate to the id of the div clicked
   //then, the if statement checks to see if the id matches the value of the
   //color in the color array that was chosen by getColor
-  //if it is, the page reloads. If it isn't, it logs a message on the
+  //if it is, the item animates, logs a great job message, then
+  //the page reloads. If it isn't true, the function logs a message on the
   //DOM to try again.
   function checkColor() {
     var id = this.id;
@@ -55,11 +61,11 @@ $(document).ready(function() {
       $(this).css('background-color', 'black').animate({
         height: '-=25px',
         width: '-=25px'
-    });
+      });
       $('#clickCorrect').html('Great work!');
       setTimeout(function(){
         location.reload();
-        }, 2000);
+      }, 2000);
     } else {
       $('#clickError').html('You clicked ' + id + '. Try again!');
     }
