@@ -69,8 +69,7 @@ $(document).ready(function() {
     } else {
       $(this).css({
         'background-color':'white',
-        'margin-right':'12px',
-        'border':'none'
+        'border':'1px solid white'
       });
       $('#clickError').html('You clicked ' + id + '. Try again!');
     }
