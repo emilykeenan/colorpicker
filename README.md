@@ -2,4 +2,4 @@
 
 This is a simple game where you are told to click a color and you click that color.
 
-If you don't and you're incorrect, don't worry. You can try again.
+If you're incorrect, don't worry. You can try again.
