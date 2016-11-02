@@ -58,6 +58,7 @@ $(document).ready(function() {
     var id = this.id;
     if(id === colorToClick) {
       $(this).css('background-color', 'black').animate({opacity: '0'});
+      $('#container').animate({opacity: '0.1'});
       $('#clickError').empty().html('Great work!');
       setTimeout(function(){
         location.reload();
