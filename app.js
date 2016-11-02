@@ -67,5 +67,4 @@ $(document).ready(function() {
       $('#clickError').empty().html('You clicked ' + id + '. Try again!');
     }
   }
-
 })
