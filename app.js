@@ -74,7 +74,7 @@ $(document).ready(function() {
 
   //declares a function used to clear out past incorrect answer
   function clearOut() {
-    $(this).html("");
+    $(this).empty();
   }
 
 })
