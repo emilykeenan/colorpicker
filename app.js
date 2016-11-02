@@ -9,6 +9,9 @@ $(document).ready(function() {
   //declares a variable that relates to the random color chosen by the getColor function
   var colorToClick = getColor(colorsArray)
 
+  //goes through each index in colorsArray, generates a div with the id set
+  //to that named color. It then sets the CSS for that div as well as the
+  //cursor for the hover state
   $.each(colorsArray , function(i, val) {
     $('#container').append('<div id="' + colorsArray[i] +'"></div>');
     $('#' + colorsArray[i]).css({
