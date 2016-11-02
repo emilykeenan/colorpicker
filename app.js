@@ -68,8 +68,7 @@ $(document).ready(function() {
       }, 2000);
     } else {
       $(this).css({
-        'background-color':'white',
-        'border':'1px solid white'
+        'opacity':'0.1',
       });
       $('#clickError').html('You clicked ' + id + '. Try again!');
     }
