@@ -1,10 +1,10 @@
 $(document).ready(function() {
   //declares an array with all of our colors
   var colorsArray = ['red', 'RosyBrown', 'turquoise', 'orange', 'PapayaWhip', 'sienna',
-                    'SkyBlue', 'DarkSlateGray', 'linen', 'MediumVioletRed', 'maroon',
-                    'blue', 'orchid', 'OliveDrab', 'DodgerBlue', 'silver',
-                    'teal', 'crimson', 'pink', 'LemonChiffon', 'chartreuse',
-                    'DarkSalmon', 'thistle', 'coral'];
+  'SkyBlue', 'DarkSlateGray', 'linen', 'MediumVioletRed', 'maroon',
+  'blue', 'orchid', 'OliveDrab', 'DodgerBlue', 'silver',
+  'teal', 'crimson', 'pink', 'LemonChiffon', 'chartreuse',
+  'DarkSalmon', 'thistle', 'coral'];
 
   //declares a variable that relates to the random color chosen by the getColor function
   var colorToClick = getColor(colorsArray)
@@ -19,6 +19,11 @@ $(document).ready(function() {
       'float':'left',
       'margin': '0 10px 20px 10px',
       'border': '1px solid black'
+    });
+    $('#' + colorsArray[i]).hover(function() {
+      $(this).css('cursor','pointer');
+    }, function() {
+      $(this).css('cursor','auto');
     });
   })
 
