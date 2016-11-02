@@ -55,7 +55,7 @@ $(document).ready(function() {
   //color in the color array that was chosen by getColor
   //if it is, the item animates, logs a great job message, then
   //the page reloads. If it isn't true, the function logs a message on the
-  //DOM to try again.
+  //DOM to try again and takes away the dot of your wrong answer.
   function checkColor() {
     var id = this.id;
     if(id === colorToClick) {
@@ -67,6 +67,11 @@ $(document).ready(function() {
         location.reload();
       }, 2000);
     } else {
+      $(this).css({
+        'background-color':'white',
+        'margin-right':'12px',
+        'border':'none'
+      });
       $('#clickError').html('You clicked ' + id + '. Try again!');
     }
   }
