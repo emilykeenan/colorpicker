@@ -1,10 +1,10 @@
 $(document).ready(function() {
   //declares an array with all of our colors
   var colorsArray = ['red', 'RosyBrown', 'turquoise', 'orange', 'PapayaWhip', 'sienna',
-                    'SkyBlue', 'DarkSlateGray', 'coral', 'linen', 'maroon',
+                    'SkyBlue', 'DarkSlateGray', 'MediumVioletRed', 'linen', 'maroon',
                     'blue', 'orchid', 'OliveDrab', 'DodgerBlue', 'silver',
                     'teal', 'crimson', 'pink', 'LemonChiffon', 'chartreuse',
-                    'DarkSalmon', 'thistle', 'MediumVioletRed'];
+                    'DarkSalmon', 'thistle', 'coral'];
 
   //declares a variable that relates to the random color chosen by the getColor function
   var colorToClick = getColor(colorsArray)
