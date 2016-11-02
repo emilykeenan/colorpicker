@@ -1,0 +1,23 @@
+#pink, #blue, #turquoise, #orange {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+  margin: 10px;
+}
+
+#pink {
+  background: pink;
+}
+
+#blue {
+  background: blue;
+}
+
+#turquoise {
+  background: turquoise;
+}
+
+#orange {
+  background: orange;
+}
