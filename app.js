@@ -13,6 +13,16 @@ $(document).ready(function() {
     '<div id="orange"></div>'
   );
 
+//   $.each(colorsArray , function(i, val) {
+//     $('#container').append('<div id="' + colorsArray[i] + '"></div>');
+//     $('#' + colorsArray[i]).css(
+//     'background':colorsArray[i],
+//     'width;':'100px',
+//     'height':'100px',
+//     'border-radius':'50%'
+//   );
+// })
+
   //tells user what color to click on
   $('#clickMsg').text('Click on ' + colorToClick + '!');
 
@@ -42,9 +52,14 @@ $(document).ready(function() {
     var id = this.id;
     console.log(id);
     if(id === colorToClick) {
-      $(this).css('background-color', 'black');
+      $(this).css('background-color', 'black').animate({
+        height: '-=25px',
+        width: '-=25px'
+    });
       $('#clickCorrect').html('Great work!');
-      setTimeout(function(){location.reload(); }, 2000);
+      setTimeout(function(){
+        location.reload();
+        }, 2000);
     } else {
       $('#clickError').html('You clicked ' + id + '. Try again!');
     }

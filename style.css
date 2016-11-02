@@ -1,26 +1,31 @@
 body {
-  background: url('images/background.jpg');
+  margin: 0;
+  font-family: 'Patua One', cursive;
 }
 
 #container, #messages {
-  width: 500px;
   margin: 0 auto;
-  padding: 20px;
   background: white;
 }
 
-#container {
-  height: 600px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+#clickMsg {
+  font-size: 36px;
+  padding-bottom: 15px;
 }
 
 #messages {
-  height: 50px;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom: 1px dotted pink;
+  background: #ececec;
+  width: 100%;
+  height: 80px;
   text-align: center;
+  padding: 60px 0 60px 0;
+}
+
+#container {
+  width: 510px;
+  height: 100%;
+  align-items: center;
+  padding: 60px 0 0 0;
 }
 
 #pink, #blue, #turquoise, #orange {
