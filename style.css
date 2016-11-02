@@ -1,3 +1,28 @@
+body {
+  background: url('images/background.jpg');
+}
+
+#container, #messages {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+}
+
+#container {
+  height: 600px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+#messages {
+  height: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom: 1px dotted pink;
+  text-align: center;
+}
+
 #pink, #blue, #turquoise, #orange {
   height: 100px;
   width: 100px;
